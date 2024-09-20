@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of Pets</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h1::before {
+            content: '★'; 
+            position: absolute;
+            left: -30px;
+            color: #f39c12;
+        }
+
+        h1::after {
+            content: '★'; 
+            position: absolute;
+            right: -30px;
+            color: #f39c12;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .animal-select {
+            display: flex;
+            gap: 10px;
+        }
+
+        .animal-select button {
+            padding: 10px;
+            border-radius: 50%; 
+            border: 1px solid #333;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            position: relative;
+        }
+
+        .animal-select button::after {
+            content: '★'; 
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            color: #f39c12;
+        }
+
+        .search-login {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .search-login input[type="text"] {
+            padding: 10px;
+            border-radius: 20px; 
+            border: 1px solid #ccc;
+            width: 150px;
+        }
+
+        .search-login button {
+            padding: 10px;
+            border-radius: 20px; 
+            border: 1px solid #333;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .animal-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .animal-images img {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px; 
+            object-fit: cover;
+            border: 1px solid #ccc;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .animal-images img:hover {
+            transform: scale(1.05); 
+        }
+
+        .animal-images a::after {
+            content: '★'; 
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #f39c12;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .button-container button::after {
+            content: '★'; 
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            color: #f39c12;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Type of Pets ทายนิสัยจากสัตว์ที่ชอบ</h1>
+
+    <div class="header">
+        <div class="animal-select">
+            <button>แมว</button>
+            <button>สุนัข</button>
+            <button>ปลา</button>
+            <button>นก</button>
+            <button>กระต่าย</button>
+        </div>
+        <div class="search-login">
+            <input type="text" placeholder="Search...">
+            <button>Login</button>
+        </div>
+    </div>
+
+    <div class="animal-images">
+        <a href="https://www.google.com" target="_blank"><img src="cat4.jpg" alt="Cat"></a>
+        <a href="https://www.google.com" target="_blank"><img src="Goden.jpg" alt="Dog"></a>
+        <a href="https://www.google.com" target="_blank"><img src="fish.jpg" alt="Fish"></a>
+        <a href="https://www.google.com" target="_blank"><img src="bird.jpg" alt="Bird"></a>
+        <a href="https://www.google.com" target="_blank"><img src="rabbit.jpg" alt="Rabbit"></a>
+    </div>
+
+    <div class="button-container">
+        <button>เลือกสัตว์ที่ชอบ</button>
+    </div>
+
+</body>
+</html>
